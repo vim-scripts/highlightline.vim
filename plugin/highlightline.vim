@@ -26,7 +26,7 @@ function! s:HighlightLine()
    if g:linehighlighted == 1
        call <SID>UnHighlightLine()
    endif
-   execute "syntax match OneLine +" . getline(".") . "+ oneline"
+   execute "syntax match OneLine +" . substitute(getline("."),"[+\"]",".","g") . "+ oneline"
    execute "highlight default link OneLine Visual"
    let g:linehighlighted = 1
 endfunction
