@@ -1,0 +1,6 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=319
+
+This is a highlight current line script.
+
+press F2 to highlight the current line
+press F2 again to unhighlight the current highlighted line
