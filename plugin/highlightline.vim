@@ -1,8 +1,8 @@
 " Vim plugin file
 " Description: 
 " Maintainer:  Torrin <torrin@torrin.net> 
-" Last Change: 2003 JUN 06
-" Version:     4
+" Last Change: 2003 JUL 09
+" Version:     5
 
 " If we have already loaded this file, don't load it again.
 if exists("loaded_highlightline")
@@ -49,7 +49,7 @@ function! s:HighlightLine()
 "I don't like these
    let currentline = substitute(currentline, "+", ".", "g")
    let currentline = substitute(currentline, "@", ".", "g")
-   echo currentline
+"   echo currentline
    execute "syntax match OneLine +" . currentline . "+ oneline"
 "   execute "syntax match OneLine \"" . currentline . "\" oneline"
    execute "highlight default link OneLine Visual"
